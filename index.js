@@ -17,7 +17,7 @@ const connection = mysql.createConnection({
 
 connection.connect(function (err) {
   if (err) {
-    //Handle live DB connection
+    //live DB connection handler
     setInterval(() => {
       connection.query("SELECT 1");
       console.log("DB server reconnected");
